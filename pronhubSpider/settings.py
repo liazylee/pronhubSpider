@@ -99,7 +99,7 @@ ITEM_PIPELINES = {
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 PHTYPE = ['video?c=1',  # Category = Asian
           ]
-SPLASH_URL = 'http://x.x.x.x:8050/'  # 境外服务器,
+SPLASH_URL = 'http://66.112.218.12:8050/'  # 境外服务器
 SCHEDULER_DISK_QUEUE = 'scrapy.squeues.PickleFifoDiskQueue'
 SCHEDULER_MEMORY_QUEUE = 'scrapy.squeues.FifoMemoryQueue'
 DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
