@@ -56,7 +56,7 @@ DOWNLOADER_MIDDLEWARES = {
     'scrapy_splash.SplashCookiesMiddleware': 723,
     'scrapy_splash.SplashMiddleware': 725,
     'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
-    'pronhubSpider.middlewares.ProxyMiddlewares': 400,
+    # 'pronhubSpider.middlewares.ProxyMiddlewares': 400, #国内服务器请打开这个配置
     'pronhubSpider.middlewares.UserAgentMiddlewares': 401,
     'pronhubSpider.middlewares.CookiesMiddlewares': 402
 }
@@ -97,15 +97,23 @@ ITEM_PIPELINES = {
 # HTTPCACHE_DIR = 'httpcache'
 # HTTPCACHE_IGNORE_HTTP_CODES = []
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
-PHTYPE = ['video?c=1',  # Category = Asian
+PHTYPE = ['video?c=1',
+          # 'recommended',
+          # 'video?o=ht',  # hot
+          # 'video?o=mv',  # Most Viewed
+          # 'video?o=tr',  # Top Rate
+
+          # Examples of certain categories
+          # 'video?c=1',  # Category = Asian
+          # 'video?c=111',  # Category = Japanese
           ]
-SPLASH_URL = 'http://x.x.x.x:8050/'  # 境外服务器
+SPLASH_URL = 'http://127.0.0.1:8050/'  # 境外服务器
 SCHEDULER_DISK_QUEUE = 'scrapy.squeues.PickleFifoDiskQueue'
 SCHEDULER_MEMORY_QUEUE = 'scrapy.squeues.FifoMemoryQueue'
 DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
 HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
 
-PROXY = 'http://127.0.0.1:8118'
+PROXY = 'http://127.0.0.1:8118' #此配置需tor, privoxy,ssr,详情  https://blog.csdn.net/liazylee/article/details/93078175
 FILES_STORE = './video'
 FILES_URLS_FIELD = 'field_name_for_your_files_urls'
 FILES_EXPIRES = 90
