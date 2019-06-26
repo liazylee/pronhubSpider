@@ -1,6 +1,6 @@
 # pronhubSpider
 
-仿WebHubBot项目，写的此项目， 效率太慢，寻找方法中.
+pornhubをクロールしているWebHubBotプロジェクトの模倣、効率が遅すぎる、方法を探しています
 
 ![][py3x] [![GitHub forks][forks]][network] [![GitHub stars][stars]][stargazers] [![GitHub license][license]][lic_file] ![issues][issues_img]
 > Disclaimer: This project is intended to study the Scrapy Spider Framework and the MongoDB database, it cannot be used for commercial or other personal intentions. If used improperly, it will be the individuals bear.
