@@ -52,7 +52,7 @@ The table in the database that holds the data is PhRes. The following is a field
     video_duration:  The length of the video, in seconds
     quality_480p:    Video 480p mp4 download path
 
-
+改进、未知请告知，邮件，issue，push都可。
 
 [py3x]: https://img.shields.io/badge/python-3.x-brightgreen.svg
 [issues_img]: https://img.shields.io/github/issues/liazylee/pronhubSpider.svg
